@@ -3,10 +3,7 @@
 <head>
 
 
-      <meta http-equiv="Content-Security-Policy" content="default-src https://code.jquery.com https://fonts.gstatic.com 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src https://fonts.googleapis.com 'self' 'unsafe-inline'; media-src *;
-      https://fonts.googleapis.com/icon?family=Material+Icons
-      img-src 'self' data: content:;
-      ">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://code.jquery.com fonts.gstatic.com data: gap: https://ssl.gstatic.com https://musicbrainz.org 'unsafe-eval'; style-src 'self' fonts.googleapis.com 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
       <meta name="format-detection" content="telephone=no">
       <meta name="msapplication-tap-highlight" content="no">
        
@@ -27,48 +24,20 @@
 
           <a id="logo-container" href="#" ckass="brand-logo">Logo</a>
           <ul id="tabs" class="tabs">
-            <li class="tab col s3"><a href="#test-swipe-1">Test 1</a></li>
-            <li class="tab col s3"><a class="active" href="#test-swipe-2">Test 2</a></li>
+            <li class="tab col s3"><a class="active" href="#test-swipe-1">Test 1</a></li>
+            <li class="tab col s3"><a  href="#test-swipe-2">Test 2</a></li>
             <li class="tab col s3"><a href="#test-swipe-3">Test 3</a></li>
           </ul>
-          <div id="test-swipe-1" class="col s12 blue">Test 1
-            <ul data-role="listview" id="taskList">
-              <li class="collection-item avatar">
-                <img src="images/yuna.jpg" alt="" class="circle">
-                <span class="title">Title</span>
-                <p>First Line <br>
-                   Second Line
-                </p>
-                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-              </li>
-              
-              <li class="collection-item avatar">
-                <i class="material-icons circle">folder</i>
-                <span class="title">Title</span>
-                <p>First Line <br>
-                   Second Line
-                </p>
-                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-              </li>
-              
-              <li class="collection-item avatar">
-                <i class="material-icons circle green">insert_chart</i>
-                <span class="title">Title</span>
-                <p>First Line <br>
-                   Second Line
-                </p>
-                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-              </li>
-              
-              <li class="collection-item avatar">
-                <i class="material-icons circle red">play_arrow</i>
-                <span class="title">Title</span>
-                <p>First Line <br>
-                   Second Line
-                </p>
-                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-              </li>
-              
+          <div id="test-swipe-1" class="black">Test 1
+
+            <input class="white-text" type="text" name="cerca" id="cerca" 
+            placeholder="cerca 'Cerca el grup">
+            <button type="submit" id="bcerca">Cerca</button>
+            
+            
+            <ul  class="collection black white-text " id="artlistas">
+              <!-- <li class="collection-item"></li><p class="black" class="white-text">hola</p></li>
+              <li class="collection-item"><p class="black" class="white-text">hola2</p></li> -->
             </ul>
           </div>
           <div id="test-swipe-2" class="col s12 red">Test 2</div>

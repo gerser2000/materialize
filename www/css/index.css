@@ -43,6 +43,15 @@ body {
                                       /* offset horizontal: half of image width and text area width */
     }
 }
+ul {
+    background-color: chartreuse;
+    text-align: left;
+}
+
+li {
+    background-color: brown;
+    text-align:center;
+}
 
 h1 {
     font-size:24px;
@@ -91,7 +100,9 @@ h1 {
         background-image:linear-gradient(to bottom, #585858 0%, #1B1B1B 51%);
     }
 }
-
-.collection {
-    text-align: center;
+.cerca {
+    padding-left: 20px;
+}
+li {
+    width:80%;
 }
