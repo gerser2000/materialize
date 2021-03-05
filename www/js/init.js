@@ -24,7 +24,7 @@ var bcerca = document.getElementById("bcerca");
 
 function buscar(){
     var cerca = document.getElementById("cerca").value;
-    console.log("hola");
+    $("#artlistas").empty();
     $.ajax({
         method: "GET",
         url: "https://musicbrainz.org/ws/2/artist?query="+cerca,
@@ -32,7 +32,9 @@ function buscar(){
       }).done(function (msg) {
         for(var item in msg.artists) {
           console.log(msg.artists[item].name);
-          $("#artlistas").append('<li class="collection-item black"><p class="black" class="white-text">'+msg.artists[item].name+'</p></li><br/><br/>')
+          $("#artlistas").append('<li class="collection-item avatar black "><a href="https://musicbrainz.org/artist/'+msg.artists[item].id+'"><i class="material-icons circle red">play_arrow</i><span class="title"><b>' + msg.artists[item].name + '</b></span><p>' + msg.artists[item].disambiguation + '</p></a></li>')
+
+         
         };
       }).fail(function () {
           alert("ERROR");
