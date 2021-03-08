@@ -23,5 +23,8 @@
     "platforms": [
       "browser"
     ]
+  },
+  "dependencies": {
+    "heroku": "^7.50.0"
   }
 }
